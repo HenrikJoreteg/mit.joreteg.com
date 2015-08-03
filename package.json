@@ -1,0 +1,10 @@
+{
+  "name": "mit.joreteg.com",
+  "version": "1.0.0",
+  "description": "A license site I can link to.",
+  "scripts": {
+  	"deploy": "surge -p public -d mit.joreteg.com"
+  },
+  "author": "Henrik Joreteg <henrik@joreteg.com>",
+  "license": "MIT"
+}
