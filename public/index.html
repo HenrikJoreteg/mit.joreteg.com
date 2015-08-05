@@ -3,27 +3,48 @@
         <title>mit.joreteg.com</title>
         <meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
         <style>
-        	body {
-        		font-family:'proxima-nova',helvetica neue,helvetica,arial,sans-serif;
-	        	font-size:16px;
-	        	line-height:1.5;
-	        	color:#4d5659;
-	        	text-rendering:optimizeSpeed;
-	        	padding: 20px;
-        	}
+            body {
+                margin: 0;
+                padding: 0;
+                font-family:'proxima-nova',helvetica neue,helvetica,arial,sans-serif;
+                font-size:16px;
+                line-height:1.5;
+                color:#4d5659;
+                text-rendering:optimizeSpeed;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            .container p:first-of-type {
+                margin-top: -20px;
+            }
+
+            .bannerImage {
+                width: 100%;
+                height: auto;
+            }
+
+            h1 {
+                padding-left: 20px;
+                margin-top: -55px;
+                color: white;
+            }
         </style>
     </head>
     <body>
-    	<h1>The MIT License (MIT)</h1>
+        <img class='bannerImage' src='http://static.joreteg.com/large_background.jpg'/>
+        <h1>The MIT License (MIT)</h1>
+        <div class='container'>
+            <p>Copyright &copy; 20<span id='year'></span> Henrik Joreteg, <a href='http://joreteg.com'>http://joreteg.com</a></p>
 
-    	<p>Copyright &copy; 20<span id='year'></span> Henrik Joreteg, <a href='http://joreteg.com'>http://joreteg.com</a></p>
+            <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
 
+            <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
 
-		<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
-
-		<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
-
-		<p>THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
-    	<script>document.getElementById('year').textContent = (new Date()).getYear().toString().slice(1)</script>
+            <p>THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+            <script>document.getElementById('year').textContent = (new Date()).getYear().toString().slice(1)</script>
+        </div>
     </body>
 </html>
